@@ -1,0 +1,8 @@
+library(stringr)
+cat('Insert a DNA string of lenght at most 1000 nt:', '\n')
+dna_str = tolower(readLines('stdin', 1))
+a = str_count(dna_str, 'a')
+c = str_count(dna_str, 'c')
+g = str_count(dna_str, 'g')
+t = str_count(dna_str, 't')
+cat(a, c, g, t, '\n', sep=' ')
